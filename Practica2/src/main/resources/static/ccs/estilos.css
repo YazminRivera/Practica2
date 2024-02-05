@@ -1,0 +1,88 @@
+body{
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0; 
+    font-family: sans-serif;
+    padding: 80px 20px 0;
+}
+
+.encabezado{
+    position: fixed;
+    background-color: #87CEEB;
+    top: 0; 
+    left: 0;
+    height: 90px;
+    width: 100%;
+}
+
+aside{
+    position: fixed; /*la posicion es fija*/
+    background-color: rosybrown;
+    top: 90px; /*margen superior*/
+    left: 0;
+    width: 20%;
+    bottom: 20px;
+}
+
+
+section{
+    position: fixed; /*la posicion es fija*/
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    top: 90px; /*margen superior*/
+    bottom: 20px;
+    right: 0;
+}
+
+footer{
+    position: fixed; /*la posicion es fija*/
+    background-color: black;
+    color: white; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 20px; 
+}
+
+.navegacion{
+    display: flex; /*flex es para que se agregue a la derecha*/
+    justify-content: space-between; /*se creo un espacio en medio de los elementos*/
+    max-width: 992px; 
+    margin: 0 auto; 
+}
+
+.nav-link{
+    color:white; 
+    text-decoration: none; 
+}
+
+.logo{
+    font-size: 30px; 
+    font-weight: bold;
+    padding: 0 40px; 
+    line-height: 90px;/*para centrar el logo, se utiliza la misma altura que al top de aside, encabezado*/
+}
+
+.nav-menu{
+    display: flex; /*hace que sea continuo*/
+    font-size: 18px;
+    line-height: 90px;
+    list-style: none; /*para que no salgan los puntos de la lista*/
+}
+
+.nav-menu-item{
+    margin: 0 15px; /*para separar los elementos de los link*/
+}
+
+.nav-menu-link{
+    padding: 8px 12px; 
+    border-radius: 6px; 
+    
+}
+
+.nav-menu-link:hover{/*para que se cambie cuando el puntero esta sobre los links*/
+    background-color: #024070; 
+    transition: 0.5s; 
+}
+
+
